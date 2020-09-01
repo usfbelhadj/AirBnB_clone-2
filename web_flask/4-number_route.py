@@ -26,11 +26,10 @@ def Pyt(text):
     return 'Python {}'.format(str(text).replace('_', ' '))
 
 
-
 @app.route('/number/<int:n>', strict_slashes=False)
 def num(n):
     return '{} is a number'.format(n)
-        
-    
+     
+
 if __name__ == "__main__":
     app.run("0.0.0.0", 5000)
